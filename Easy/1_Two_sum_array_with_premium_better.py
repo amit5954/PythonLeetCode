@@ -4,11 +4,8 @@ class Solution:
         for i in range(len(nums)):
             current = nums[i]
             x = target - current
-            print(x)
             if x in map.keys():
                 return [map[x], i]
-            print(map)
-            print(i)
             map[current] = i
             i = i+1
 
